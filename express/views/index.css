@@ -1,0 +1,23 @@
+/*
+ * @Author: preciousmouse 
+ * @Date: 2018-12-18 18:19:36 
+ * @Last Modified by: preciousmouse
+ * @Last Modified time: 2019-04-17 16:07:57
+ */
+
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+.demo{
+	display: flex;
+	flex-direction: column;
+	/* align-items: baseline; */
+}
+.demo>button{
+	margin-bottom: 10px;
+	font-size: .5rem;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvaW5kZXgvaW5kZXguY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7QUFDQSxDQUFDOztBQUVEO0FBQ0E7QUFDQTtBQUNBLDBCQUEwQjtBQUMxQjtBQUNBO0FBQ0E7QUFDQTtBQUNBLEMiLCJmaWxlIjoiaW5kZXguY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLypcclxuICogQEF1dGhvcjogcHJlY2lvdXNtb3VzZSBcclxuICogQERhdGU6IDIwMTgtMTItMTggMTg6MTk6MzYgXHJcbiAqIEBMYXN0IE1vZGlmaWVkIGJ5OiBwcmVjaW91c21vdXNlXHJcbiAqIEBMYXN0IE1vZGlmaWVkIHRpbWU6IDIwMTktMDQtMTcgMTY6MDc6NTdcclxuICovXHJcblxyXG4vKiAqe1xyXG4gICAgbWFyZ2luOiAwO1xyXG4gICAgcGFkZGluZzogMDtcclxufSAqL1xyXG5cclxuLmRlbW97XHJcblx0ZGlzcGxheTogZmxleDtcclxuXHRmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG5cdC8qIGFsaWduLWl0ZW1zOiBiYXNlbGluZTsgKi9cclxufVxyXG4uZGVtbz5idXR0b257XHJcblx0bWFyZ2luLWJvdHRvbTogMTBweDtcclxuXHRmb250LXNpemU6IC41cmVtO1xyXG59Il0sInNvdXJjZVJvb3QiOiIifQ==*/

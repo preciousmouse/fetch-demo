@@ -2,7 +2,7 @@
  * @Author: preciousmouse 
  * @Date: 2018-12-18 17:18:05 
  * @Last Modified by: preciousmouse
- * @Last Modified time: 2019-04-19 15:20:40
+ * @Last Modified time: 2019-04-19 15:39:11
  */
 import React from 'React'
 import ReactDom from 'react-dom'
@@ -36,11 +36,8 @@ export default class App extends React.Component{
 	postFetch = (url,data,params={},resolveFunc=null)=>{
 		return fetch(url,Object.assign({
 			body: JSON.stringify(data), // must match 'Content-Type' header
-			cache: 'no-cache', 	// *default
-								// no-cache
-								// reload
-								// force-cache
-								// only-if-cached
+			cache: 'default', 	// *default, no-store, no-cache
+								// reload, force-cache, only-if-cached
 			credentials: 'same-origin', // include, same-origin, *omit
 			headers: {
 				// 'User-Agent': 'haha',	//chrome中设置无效
@@ -72,7 +69,14 @@ export default class App extends React.Component{
 	}
 
 	fetchJson = ()=>{
-		fetch(this.host+'/movies.json').then((res)=>{
+		fetch(this.host+'/movies.json',{
+			cache: 'no-store', 	// *default 默认行为
+								// no-store 完全绕过缓存
+								// no-cache 每次请求向服务端验证缓存(无论缓存是否最新)
+								// reload	请求阶段不使用缓存(?)
+								// force-cache 如果有缓存，则强制使用(无论缓存是否过期)
+								// only-if-cached 
+		}).then((res)=>{
 			return res.json();
 		}).then((data)=>{
 			console.log(0,data);
@@ -202,7 +206,6 @@ export default class App extends React.Component{
 				<button onClick={()=>document.querySelector("#files").click()}>
 					fetchFiles</button>
 					<input type="file" id='files' multiple style={{display:'none'}}/>
-				<button onClick={this.fetchRedirect}>fetchRedirect</button>
 				<button onClick={this.fetchRedirect}>fetchRedirect</button>
 
 			</div>

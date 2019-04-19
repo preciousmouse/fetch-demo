@@ -131,4 +131,7 @@ router.post('/redirect',(req,res,next)=>{
 	const {type} = req.body;
 	res.redirect(301,`/movies.json`);
 })
+
+
+
 module.exports = router;
